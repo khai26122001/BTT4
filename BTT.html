@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    *{
+    margin: auto;
+    padding: 0%;
+}
+.wrapper{
+    height: auto; 
+    width: 1089px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+nav{
+    height: 50px; 
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    line-height: 50px;
+    background-color: rgb(223, 250, 215);
+}
+
+header{
+    height: 150px; 
+    width: 1089px;
+    border: 0.1px solid rgb(255, 255, 255);
+    background-image: url(/img/hinh-nen-an-tuong-78.jpg);
+}
+body{
+    background-image:url(/img/40-top-hinh-nen-4k-cho-pc-laptop-macbook-may-tinh-dep-nhat-6-2048x1152.jpg);
+}
+.content{
+    height: 400px;
+    width: 100%;
+  
+    }   
+aside{
+    height: 400px;
+    width: 40%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+section{
+        height: 400px;
+        width: 60%;
+        background-color: rgb(255, 255, 255);
+        float :left;
+        
+        }
+ footer{
+        height: 130px;
+        width: 100%;
+        border:0.1px  solid rgb(255, 255, 255);
+        /*background-image: url(../image/No-Branding-Header-Background-1.jpg);*/
+        background-color: rgb(182, 217, 233);
+
+        }
+.menu li{
+    height: 100%;
+    width: 130px;
+    float: left;
+    background-color: rgb(223, 250, 215);
+    line-height: 50px;
+    text-indent: 20px;
+    list-style: none;
+    position: relative;
+}
+.menu li:hover{
+    background-color: blueviolet;
+}
+li:hover>a{
+    color: aliceblue;
+    font-size: italic;
+}
+a{
+    color: rgb(197, 197, 236);
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li .submenu{
+    display: none;
+    position: absolute;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+nav span form #btnGO{
+    padding: 3px;
+    border-radius: 50%;
+}
+
+nav span form #txtEmail{
+    padding: 3px;
+    border-radius: 10%;
+}
+.wrapper header p{
+font-size: 50px;
+text-shadow: 10px 20px 20px rgb(255, 255, 255);
+text-align: center;
+color: blanchedalmond;
+}
+.wrapper header:hover p{
+    transform: rotate(25deg );
+}
+
+</style>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>SERVICES </li>
+                <li><a href=""></a>CONTACT
+                <ul class="submenu">
+                    <li><a href="">PHONE</a></li>
+                    <li><a href="">INTERNET</a></li>
+                    <li><a href="">TV</a></li>
+                </ul>
+            </li>
+               <li><a href=""></a>About</li>
+               <li><a href=""></a>Help</li>
+            </ul>
+            <span>
+                <form action="" method="post">
+                    <label for="Email">Email</label>
+                    <input type="email", name="txtEmail" required placeholder="Nhap email" maxlength="20">
+                    <input type="submit" value="GO" id="btnGO">
+                </form>
+            </span>
+        </nav>
+        <header><p>Game Show</p></header>
+        <div class="content">
+<aside>
+                <article>
+                    <h2>HOA MAU HONG</h2>
+                  <img src="/img/hinh-nen-an-tuong-78.jpg" width="300px" height="100px">
+                </article>
+                
+                <article>
+                    <h2>HOA MAU VANG</h2>
+                <img src="/img/hinh-nen-an-tuong-78.jpg" width="300px" height="100px">
+                </article>
+
+                <article>
+                    <h2>HOA MAU DO</h2>
+                    <img src="/img/hinh-nen-an-tuong-78.jpg" width="300px" height="100px">
+                </article>
+            </aside>
+            <section>
+                <h2>DANG KI HOA</h2>
+                <form action="dangki.php" method="post">
+                    <fieldset>
+                        <legend>Thong tin cua ban</legend>
+                        <label for="lblHoTen">Ho Ten: </label>
+                        <input type="text" name="txtHT" id="txtHT" required placeholder="Nhap ho ten" minlength="20"> <br> <br>
+                        <label for="lblGioiTinh">Gioi Tinh: </label>
+                        <input type="radio" name="radNam" value="nam">
+                        <label>Nam</label>
+                        <input type="radio" name="radNam" id="radNu" value="nu">
+                        <label>Nu</label>
+                        <br> <br>
+                        <label for="ngaySinh">Ngay Sinh</label>
+                        <input type="date" name="txtDate" id="txtDate" required placeholder="Ngay Sinh" minlength="20" pattern="dd/MM/yyyy">
+                        <br><br>
+                        <label for="lblHoten">Ho ten: </label>
+                        <input type="text" name="txtHT" id="txtHT" required placeholder="Nhap Ho Ten" minlength="20">
+                        <br> <br>
+                        <input type="submit" value="GO">
+                        <br><br> 
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
